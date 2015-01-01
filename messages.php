@@ -1,4 +1,3 @@
-
 <?php	
 // include configuration file
 include('config.php');
@@ -20,6 +19,7 @@ $result2 = mysqli_query($db, $sql2);
 $row2 = mysqli_fetch_assoc($result2);
 
 // display shout (two columns - left column display the image; right column displays the text)
+echo "<div class=\"messages\">";
 echo "<div class=\"well\">";
 echo "<div class=\"row\">";
 
@@ -55,6 +55,7 @@ echo "<span class=\"text-muted\">{$row['formatted_date']}<span>";
 echo "</div>";
 echo "</div>";
 echo "</div>";
+echo "</div>";
 }
 ?>
 
@@ -70,5 +71,5 @@ function refresh_div() {
 	});
 }
 
-t = setInterval(refresh_div,3600);
+t = setInterval(refresh_div,3000);
 </script>
