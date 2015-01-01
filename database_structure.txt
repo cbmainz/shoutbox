@@ -1,0 +1,17 @@
+CREATE TABLE users (
+    user_id int NOT NULL AUTO_INCREMENT,
+    firstname varchar(255) NOT NULL,
+    lastname varchar(255) NOT NULL,
+    email varchar(255) NOT NULL,
+    userpass varchar(255) NOT NULL,
+    signupdate datetime NOT NULL,
+    PRIMARY KEY (user_id)
+);
+     
+CREATE TABLE shouts2 (
+    shout_id int NOT NULL AUTO_INCREMENT,
+    user_id int NOT NULL,
+    shout text NOT NULL,
+    shout_date datetime NOT NULL,
+    PRIMARY KEY (shout_id)
+);
