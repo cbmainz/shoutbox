@@ -78,7 +78,7 @@ if(isset($_POST['submit']))
 		$_SESSION['nickname'] = $_POST['nickname'];
 		
 		// redirect user to profile page
-		header("Location: activity.php");
+		header("Location: profile.php");
 		exit();
 				
 	} 

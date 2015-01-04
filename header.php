@@ -54,7 +54,7 @@
 								echo "<li><a href=\"profile.php\"><i class=\"fa fa-user\"></i>Profil</a></li>";
 								echo "<li><a href=\"signout.php\"><i class=\"fa fa-sign-out\"></i>Logout</a></li>";
 							} else {
-								echo "<li><a href=\"/\"><i class=\"fa fa-comments-o fa-lg \"></i>Nachrichten</a></li>";
+								echo "<li><a href=\"/\"><i class=\"fa fa-comments-o fa-lg \"></i>Nachrichten</a></li>"; //change path if necessary
 								echo "<li><a href=\"signin.php\"><i class=\"fa fa-sign-in\"></i>Anmelden</a></li>";
 								echo "<li><a href=\"signup.php\"><i class=\"fa fa-pencil-square-o\"></i>Registrieren</a></li>";
 							}

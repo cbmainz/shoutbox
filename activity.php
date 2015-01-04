@@ -12,8 +12,8 @@ session_start();
 // check for a user_id
 if(!$_SESSION['user_id'])
 {
-	// redirect user to homepage if they are not signed in
-	header("Location: /");	
+	// redirect user to homepage if they are not signed in, change path if necessary
+	header("Location: /");
 }
 
 ?>
@@ -43,7 +43,7 @@ if(!$_SESSION['user_id'])
 					$sql = "DELETE FROM shouts2 WHERE shout_id = '{$_GET['id']}' LIMIT 1";
 					$result = mysqli_query($db, $sql) or die('Query failed: ' . mysqli_error($db));
 				
-					// display confirmation
+					// display confirmation, change path if necessary
 					echo "<div class=\"alert alert-success\">Nachricht wurde erfolgreich gelöscht!<a href=\"activity.php\" class=\"alert-link pull-right close\">&times;</a></div>";
 				}
 			}
