@@ -15,7 +15,7 @@ $db = mysqli_connect ($db_host, $db_user, $db_password, $db_name) OR die ('Could
 		<!-- content -->	
 		<div class="container" style="margin-top: 65px">
 		
-			<h2 class="text-primary">Nachrichten auf <a style="text-decoration: none" href="https://crowdapp.de"><span class="text-mudet"><i class="fa fa-cloud fa-lg"></i>crowdapp.de</span></a></h2>
+			<h2 class="text-primary">Nachrichten</h2>
 	
 			<!-- sign in link -->
 			<p class="text-muted">Um Nachrichten zu schreiben, musst du angemeldet sein.</p>
